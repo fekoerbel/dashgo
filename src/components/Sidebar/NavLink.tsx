@@ -13,7 +13,7 @@ interface NavLinkProps extends ChakraLinkProps {
 export function NavLink({ icon, children, href, ...rest }: NavLinkProps) {
     return (
         <ActiveLink href={href} passHref>
-            <ChackraLink display={"flex"} alignItems={"center"} color={"pink.400"} {...rest}>
+            <ChackraLink as={"span"} display={"flex"} alignItems={"center"} color={"pink.400"} {...rest}>
                 <Icon as={RiContactsLine} fontSize={"20"} />
                 <Text ml={"4"} fontWeight={"medium"}>{children}</Text>
             </ChackraLink>
